@@ -1,0 +1,4 @@
+# Ignore bazel symlinks
+/bazel-*
+# Ignore intellij project
+/.ijwb
