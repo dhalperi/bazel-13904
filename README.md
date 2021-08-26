@@ -1,6 +1,31 @@
 Demo for https://github.com/bazelbuild/bazel/issues/13904
 
 run `bazel cquery 'deps(//:foo)'`: I get nothing. If I change .bazelversion back to 4.1.0, I get correct output.
+more info:
+
+* my OS: macOS Big Sur: version 11.5.2 (20G95)
+* my python versions:
+
+```
+➜  bazel-13094 git:(main) python --version
+Python 2.7.16
+➜  bazel-13094 git:(main) python3 --version
+Python 3.7.9
+```
+
+* my xcode info:
+
+```
+➜  bazel-13094 git:(main) xcrun --version     
+xcrun version 59.
+➜  bazel-13094 git:(main) xcode-select -v
+xcode-select version 2384.
+➜  bazel-13094 git:(main) clang -v
+Apple clang version 12.0.0 (clang-1200.0.32.29)
+Target: x86_64-apple-darwin20.6.0
+Thread model: posix
+InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+```
 
 # 4.2.0
 
